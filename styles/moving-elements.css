@@ -1,0 +1,49 @@
+.cupboard_moving-elements-wrapper {
+  padding: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: var(--cupboard-background-color);
+  border: 2px solid brown;
+  display: flex;
+  gap: 8px;
+}
+
+.cupboard_moving-element-container {
+  width: calc(100% / 3);
+}
+
+.cupboard_moving-element-wrapper {
+  animation: rotate 3s infinite;
+  position: relative;
+}
+
+.cupboard_moving-element {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  animation: scale 4s infinite;
+  position: relative;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,65 @@
+@import url('./styles/color-containers.css');
+@import url('./styles/logs-container.css');
+@import url('./styles/moving-elements.css');
+
+:root {
+  --cupboard-primary-color: rgb(241, 203, 139);
+  --cupboard-background-color: rgb(233, 189, 113);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cupboard {
+  width: 700px;
+  height: 700px;
+  box-sizing: border-box;
+  border: 6px rgb(231, 190, 119) solid;
+  background-color: var(--cupboard-primary-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 1fr 2fr;
+  gap: 5px;
+}
+
+.cupboard_text-container {
+  background-color: var(--cupboard-background-color);
+  box-sizing: border-box;
+  border: 2px solid brown;
+  resize: none;
+  overflow: hidden;
+  font-size: 18px;
+  outline: none;
+}
+
+span {
+  color: green;
+  font-weight: 600;
+}
+
+.cupboard_simple-box {
+  border: 2px solid brown;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: var(--cupboard-background-color);
+}
+
+.cupboard_simple-box__right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}

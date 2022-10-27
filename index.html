@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ateuco test 2</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="cupboard">
+      <textarea class="cupboard_text-container" data-number="1"></textarea>
+      <textarea class="cupboard_text-container" data-number="2"></textarea>
+      <textarea class="cupboard_text-container" data-number="3"></textarea>
+      <div class="cupboard_color-containers-wrapper">
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+      </div>
+      <div class="cupboard_simple-box"></div>
+      <div class="cupboard_color-containers-wrapper cupboard_color-containers-wrapper__right">
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+        <div class="cupboard_color-container"></div>
+      </div>
+      <div class="cupboard_simple-box cupboard_simple-box__right"></div>
+      <div class="cupboard_logs-container-wrapper">
+        <div class="cupboard_logs-control-panel">
+          <button class="cupboard_logs-button">Очистить</button>
+        </div>
+        <div class="cupboard_logs-container"></div>
+      </div>
+      <div class="cupboard_moving-elements-wrapper">
+        <div class="cupboard_moving-element-container">
+          <div class="cupboard_moving-element-wrapper">
+            <div class="cupboard_moving-element" id="moving-element-1"></div>
+          </div>
+        </div>
+        <div class="cupboard_moving-element-container">
+          <div class="cupboard_moving-element-wrapper">
+            <div class="cupboard_moving-element" id="moving-element-2"></div>
+          </div>
+        </div>
+        <div class="cupboard_moving-element-container">
+          <div class="cupboard_moving-element-wrapper">
+            <div class="cupboard_moving-element" id="moving-element-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <template id="select-color-template">
+    <div class="select-color-popup">
+      <div class="select-color-popup_title-container">
+        <h4 class="select-color-popup_title">Выберите цвет:</h4>
+        <button class="select-color-popup_close-button"></button>
+      </div>
+      <div class="select-color-popup_container">
+        <div class="select-color-popup_item"></div>
+        <div class="select-color-popup_item"></div>
+        <div class="select-color-popup_item"></div>
+        <div class="select-color-popup_item"></div>
+      </div>
+    </div>
+  </template>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
